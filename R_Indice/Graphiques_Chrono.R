@@ -1,0 +1,5 @@
+library(ggplot2)
+g1 = ggplot(my_data3, aes(x = temps, y=Ind_Global)) + aes(colour = Flux) + geom_line() + geom_smooth() + xlab("Période") + ylab("Indice Global(%)") + ggtitle("Indices des prix à l'Importation et à l'Exportation")
+ggsave("Graphe_1.pdf")
+g2 = ggplot(my_data3, aes(x = Mois, y=Ind_Global, group=Annee)) + geom_line() + aes(colour=Annee) + facet_grid(.~Flux) + ylab("Indice Global(%)") + ggtitle("Evolution comparative des indices à l'Importation et à l'Exportation")
+ggsave("Graphe_2.pdf")
