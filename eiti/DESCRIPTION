@@ -1,0 +1,14 @@
+Package: eiti
+Type: Package
+Version: 0.0.1
+Title: Echantillonnage aux indices avec une BDD EUROTRACE
+Description: Ce package part de l'echantillonnage a la production des indices.Connexion a la BDD EUROTRACE,Echantillonnage,Detection des outliers (Tukey),Tests homogeneite,Calcul des Indices de Laspeyres (Gestion des valeurs manquantes),Calcul des Indices de Paasche.
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2018-04-06 18:00:36 UTC+1; Adjovi
+Author: Romeo Adjovi <romeo.adjovi@gmail.com>
+Maintainer: Romeo Adjovi <romeo.adjovi@gmail.com>
+RoxygenNote: 6.0.1
+License: GPL-3
+Encoding: UTF-8
+Imports: classInt, dplyr, ggplot2, openxlsx, lubridate, modes, RODBC, tidyverse
